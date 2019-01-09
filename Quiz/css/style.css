@@ -1,0 +1,111 @@
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins.ttf");
+  src:
+  url("../fonts/Poppins.ttf") format("ttf"),
+  url("../fonts/Poppins.ttf") format("truetype");
+}
+body{
+ font-family: 'Poppins', sans-serif;
+ font-weight: 400;
+ font-size: 14px;
+    overflow-x: hidden;
+    background-color: aqua;
+}
+
+.wrapper {
+	background: #fff;
+	margin-top: 100px;
+	border-radius: 60px;
+}
+.header h1{
+    font-size: 50px;
+    color: #fff;
+}
+.question {
+	text-align: center;
+	 background: red; 
+    color: #fff;    
+	padding: 20px;
+	border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    text-transform: uppercase;
+        font-weight: bold;
+}
+.question_box {
+	padding: 0 50px 54px;
+	border: 1px solid #999;
+	background: #fff;
+	margin-top: 60px;
+}
+.btn2 {
+	width: 100%;
+	border: 1px solid #ddd;
+	padding: 10px;
+	background: #fff;
+}
+.btn2:hover {
+	
+	background: red;
+    color: #fff;
+}
+.amount_box ul {
+	padding: 0;
+	display: inline-flex;
+}
+.amount_box ul li{
+padding: 5px;
+    border: 1px solid #ddd;
+    list-style: none;
+}
+.amount_box ul li a{
+
+}
+.number_box{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+.number {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 81px;
+	color: red;
+	font-weight: bold;
+}
+.life_box ul{
+    padding: 0;
+    display: inline-block;
+}
+.life_box ul li {
+	padding: 7px 50px 20px;
+	border: 1px solid #ddd;
+	list-style: none;
+	display: inline;
+       color: #fff;
+    background: red;
+}
+.life_box ul li.active {
+	background: red;
+}
+.life_box ul li a {
+	font-size: 25px;
+	color: #fff;
+	vertical-align: middle;
+}
+.life_box ul li {
+ background: #000;
+}
+.leader_box{
+    text-align: center;
+	padding: 7px 45px;
+    
+}
+.leader_box h2{
+	background: #ddd;
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}

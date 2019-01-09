@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <title>Quiz Game</title>
+</head>
+
+<body>
+    <div class="quiz_box" style="display: none;">
+        <div class="container wrapper">
+            <div class="header">
+                <h1 class="question">quiz</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="question_box pt-5">
+                        <h1 class="question">question</h1>
+                        <p id="question_box">Question goes in this section</p>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 mt-5">
+                            <button id="answer0" type="button" name="answer" class="btn2">A.<span></span></button>
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <button id="answer1" type="button" name="answer" class="btn2">B.<span></span></button>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-md-6 ">
+                            <button id="answer2" type="button" name="answer" class="btn2">C.<span></span></button>
+                        </div>
+                        <div class="col-md-6">
+                            <button id="answer3" type="button" name="answer" class="btn2">D.<span></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="amount_box pt-5">
+                        <h3>Amount</h3>
+                        <ul>
+                            <li id="score4"> <a href="#">0</a> </li>
+                            <li id="score3"> <a href="#">0</a> </li>
+                            <li id="score2"> <a href="#">0</a> </li>
+                            <li id="score1"> <a href="#">0</a> </li>
+                            <li id="score0"> <a href="#">0</a> </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Wrong:</span> <span id="wrong_amount">0</span> <span>/3</span>
+                    </div>
+                    <div class="number_box">
+                        <h1 id="timer" class="number"></h1>
+                    </div>
+                    <div class="life_box">
+                        <h1 class="heading">life-line</h1>
+                        <ul>
+                            <li> <a id="lifeLine" href="#">50-50</a> </li>
+                            <!-- <li> <a href="#">50</a> </li>    -->
+                        </ul>
+                    </div>
+                      <div class="leader_box">
+                        <h2 class="heading">
+                            leader box
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="start_modal" id="myModal" role="">
+        <div class="modal-dialog">
+            <!-- Modal content Ref: https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Welcome</h4>
+                </div>
+                <div class="modal-body">
+                  <input type="text" name="username" placeholder="Please enter your name." style="outline: none; border: none;">
+                </div>
+                <div class="modal-footer">
+                  <button id="play_btn" type="button" class="btn btn-success" data-dismiss="modal">Play Now!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="" id="leaderBoard" style="display: none;">
+        <div class="modal-dialog">
+            <!-- Modal content Ref: https://v4-alpha.getbootstrap.com/components/modal/-->
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Leader Board</h4>
+                </div>
+                <div class="modal-body">
+                  <ul id="leaderboard_list">
+                      
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button id="back_btn" type="button" class="btn btn-success" data-dismiss="modal">Back</button>
+   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
